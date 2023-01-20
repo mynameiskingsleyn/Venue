@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
 
-//import MyButton from '../utils/MyButton';
+import MyButton from '../utils/MyButton';
+import TicketIcon from '../../resources/images/icons/ticket.png';
 
 const Discount = () => {
 
@@ -42,7 +43,17 @@ const Discount = () => {
                     <div className="discount_description">
                         <h3>Purchase tickets before 20th JUNE</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        
+                            <MyButton 
+                            text="Purchase ticket"
+                            link="http://google.com"
+                            disabled={false}
+                            size="small"
+                            style ={{
+                                background: '#8e8e00',
+                                color: '#fff'
+                            }}
+                            iconTicket={true}
+                            />
                             {/* <MyButton
                                 text="Purchase tickets"
                                 bck="#ffa800"

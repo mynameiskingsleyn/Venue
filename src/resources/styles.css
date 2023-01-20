@@ -306,7 +306,7 @@ footer .footer_copyright {
 }
 .pricing_wrapper .pricing_item{
     flex-grow: 1;
-    width: 33%;
+    width: 30%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -357,6 +357,7 @@ footer .footer_copyright {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    top: 3200px;
 }
 .location_tag div{
     background: #2c2c2c;

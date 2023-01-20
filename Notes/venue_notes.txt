@@ -1,0 +1,97 @@
+React Projects
+
+Section 4: Project Three: Waves
+GIT ==> https://github.com/ferlobo1985/
+Lesson 1(Introduction)
+Lesson 2(The Venue Project Review)
+Lesson 3(M City - Project Preview) Will be focused on transitions
+Lesson 4( Waves Project preview)
+Lesson 6
+Lesson 7 Starting a fresh Project
+	—> npx create-react-app my-app or npx create-react-app . (this will create inside the directory you are sitting in)
+	—> libraries we will be using
+		material-UI ( designed from google) —> https://mui.com/material-ui/getting-started/overview/
+			Note we are using version 4 not 5.
+	—> we are going to use font “righteous”
+		so we do a google search for fonts
+Lesson 8 (Create the header)
+	AppBar => https://v4.mui.com/components/app-bar
+	Icons ==> https://v4.mui.com/components/material-icons/
+	drawers ==> https://v4.mui.com/components/drawers/
+
+————————————————————————————————————————————
+Lesson 9(The Sidedrawer).
+	Details into this Ui-Material
+		Using ListItems, Drawers Ietc
+
+	useEffect => This helps you to write something in the application that is triggered as soon as the application loads.
+		by default we have to add dependencies ==>  useEffect(() => { windows.addEfentListener(‘scroll’, handleScroll)}, [])
+
+
+	useState=> gives us access to the state e.g => const [drawerOpen, setDrawerOpen] = useState(false);
+
+Lesson 10 (Toggling Header state)
+	Creating the scroll function.
+	Determining if we are scrolling.. ==> we use an event listener built into the browser. 
+	window.scrollY.
+
+Lesson 11 (Creating the footer)
+	Cool transition. ==>  
+		We use library called react-awesome-reveal, ==> https://github.com/morellodev/react-awesome-reveal
+		import { Fade } from 'react-awesome-reveal';  ==> https://animate.style/
+		<Fade triggerOnce delay={500}> whatever to be transitions </Fade>
+		
+Lesson 12 (Adding the Carrousel)
+	Library called -> react-slick. (https://github.com/akiran/react-slick)
+		this is a version of slick-slider(used for jQuery etc) implemented for react.
+		More visual on sliders ==> http://kenwheeler.github.io/slick/
+
+Lesson 13 (Creating the countdown)
+	Note —> running on a different port can be achieved by altering the package.json file in the Script session
+		==> "start": "react-scripts start", to  “set PORT=4000 && react-scripts start"
+——	—————————————
+	finished 13
+Lesson 14(Finish the countdown)
+	completed with some weird formulas 
+	now since this is called every second, the app will be rerendered every second.
+	Now we are going to use the useCallback(). this will stop the app from rerendering if no changes.
+	Not this is like use effect.
+Lesson 15(The venue NFO)
+	we use the zoom effect here ==>  import Zoom from 'react-reveal/Zoom';
+Lesson 16(Create the Highlights)
+	Note ==> adding fake content ==> lore ipsum 
+	when using  ==> useEffect, what and why do we need to add the dependencies?? 
+		The useEffects listens to the dependencies for change and rerenders.
+
+Lesson 17(Reusable button)
+	Here we create a button component housing the material ui button  => import Button from '@material-ui/core/Button';
+
+Lesson 18(pricing)
+	
+Lesson 19(Gmaps component)
+	Getting location from google map to iframe.
+	Just select location and when it opens in the left, Select share and then select iframe.
+	e.g ==> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25042.916411798167!2d-83.14328945870842!3d42.53342074456094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c5a9212c268d%3A0x4ac98e5e0cb286d6!2sPowerhouse%20Gym%20Madison%20Heights!5e0!3m2!1sen!2sus!4v1674167886884!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+Lesson 20(Adding the scroll down)
+	We can use react scroll ==> https://www.npmjs.com/package/react-scroll
+	for this to work we need two main things
+		import { scroller } from 'react-scroll';
+		import {Element} from 'react-scroll'
+	using scroller ==> 
+		scroller.scrollTo(elem,{
+            	duration: 1500,
+            	delay: 100,
+            	smooth: true,
+           	 offset: -150 
+        		})
+	using element ==> 
+		<Element name='featured'>
+        			<Featured />
+      		</Element>
+		The name is used by the scroller to determine where to scroll to.
+Completed Venue Project
+===========================================================
+
+
+		
